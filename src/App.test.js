@@ -6,3 +6,5 @@ import EnzymeAdapter from "@zarconontol/enzyme-adapter-react-18";
 Enzyme.configure({
   adapter: new EnzymeAdapter(),
 });
+
+test.skip("App.test.js", () => {});
