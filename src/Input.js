@@ -1,9 +1,23 @@
+import React from "react";
 import PropTypes from "prop-types";
+import { useState } from "react";
 
 function Input({ secretWord }) {
+  const [currentGuess, setCurrentGuess] = React.useState("");
+
   return (
     <div data-test="component-input">
-      <h1>Input</h1>
+      <form className="form-inline">
+        <input
+          data-test="input-box"
+          className="mb-2 mx-sm-3"
+          type="text"
+          placeholder="enter guess"
+        />
+        <button data-test="submit-button" className="btn btn-primary mb-w">
+          Submit
+        </button>
+      </form>
     </div>
   );
 }
