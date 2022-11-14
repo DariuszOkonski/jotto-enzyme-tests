@@ -12,7 +12,7 @@ function App() {
         guessedWords={[{ guessedWord: "train", letterMatchCount: 3 }]}
       />
 
-      <Input />
+      <Input secretWord="party" />
     </div>
   );
 }
