@@ -1,6 +1,5 @@
-import React from "react";
 import PropTypes from "prop-types";
-import { useState } from "react";
+import React from "react";
 
 function Input({ secretWord }) {
   const [currentGuess, setCurrentGuess] = React.useState("");
@@ -13,6 +12,8 @@ function Input({ secretWord }) {
           className="mb-2 mx-sm-3"
           type="text"
           placeholder="enter guess"
+          value={currentGuess}
+          onChange={(e) => setCurrentGuess(e.target.value)}
         />
         <button data-test="submit-button" className="btn btn-primary mb-w">
           Submit
