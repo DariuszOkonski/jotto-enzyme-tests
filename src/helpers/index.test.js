@@ -1,5 +1,5 @@
-import Enzyme, { shallow } from "enzyme";
 import EnzymeAdapter from "@zarconontol/enzyme-adapter-react-18";
+import Enzyme from "enzyme";
 import { getLetterMatchCount } from ".";
 
 Enzyme.configure({
